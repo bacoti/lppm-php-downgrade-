@@ -95,7 +95,7 @@
             <div class="text-center mb-5">
                 <h3 class="display-7 fw-bold text-secondary mb-3">
                     <i class="fas fa-users me-2"></i>
-                    Pimpinan LPPM
+                    Struktur LPPM IDE LPKIA
                 </h3>
                 <div class="border-bottom border-secondary w-25 mx-auto mb-4"></div>
                 <p class="lead text-muted">Tim kepemimpinan yang berpengalaman dan berdedikasi</p>
@@ -105,16 +105,16 @@
                 {{-- Ketua LPPM --}}
                 <div class="col-lg-5 col-md-6">
                     <div class="card border-0 shadow-lg h-100 hover-card">
-                        <div class="position-relative">
-                            <img src="{{ asset('images/muhtarudin.jpg') }}"
+                        <div class="position-relative pt-2">
+                            <img src="{{ asset('images/muhtar.jpg') }}"
                                  class="card-img-top"
                                  alt="Drs. Muhtarudin, M.M."
-                                 style="height: 300px; object-fit: cover;">
+                                 style="width: 40%; height: auto; aspect-ratio: 3/4; object-fit: cover; margin: 0 auto; display: block;">
                             <div class="position-absolute top-0 end-0 m-3">
                                 <span class="badge bg-primary fs-6">Ketua</span>
                             </div>
                         </div>
-                        <div class="card-body text-center p-4">
+                        <div class="card-body text-center py-2 px-1">
                             <h5 class="card-title fw-bold text-primary mb-2">Drs. Muhtarudin, M.M.</h5>
                             <p class="card-text text-secondary mb-2 fw-semibold">Ketua LPPM IDE LPKIA Bandung</p>
                             <div class="d-flex justify-content-center align-items-center">
@@ -130,22 +130,100 @@
                 {{-- Sekretaris LPPM --}}
                 <div class="col-lg-5 col-md-6">
                     <div class="card border-0 shadow-lg h-100 hover-card">
-                        <div class="position-relative">
+                        <div class="position-relative pt-2">
                             <img src="{{ asset('images/nengsusi.jpg') }}"
                                  class="card-img-top"
                                  alt="Dr. Neng Susi"
-                                 style="height: 300px; object-fit: cover;">
+                                 style="width: 40%; height: auto; aspect-ratio: 3/4; object-fit: cover; margin: 0 auto; display: block;">
                             <div class="position-absolute top-0 end-0 m-3">
                                 <span class="badge bg-success fs-6">Sekretaris</span>
                             </div>
                         </div>
-                        <div class="card-body text-center p-4">
+                        <div class="card-body text-center py-2 px-1">
                             <h5 class="card-title fw-bold text-primary mb-2">Dr. Neng Susi S.S., S.Kom., M.M.</h5>
                             <p class="card-text text-secondary mb-2 fw-semibold">Sekretaris LPPM IDE LPKIA Bandung</p>
                             <div class="d-flex justify-content-center align-items-center">
                                 <span class="badge bg-light text-dark px-3 py-2">
                                     <i class="fas fa-id-card me-1"></i>
                                     NIDN: 0405028803
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Additional Team Members --}}
+            <div class="row g-4 justify-content-center mt-4">
+                {{-- Karina Nur Fadilah --}}
+                <div class="col-lg-4 col-md-4">
+                    <div class="card border-0 shadow-lg h-100 hover-card">
+                        <div class="position-relative pt-2">
+                            <img src="{{ asset('images/karina.jpg') }}"
+                                 class="card-img-top"
+                                 alt="Karina Nur Fadilah"
+                                 style="width: 40%; height: auto; aspect-ratio: 3/4; object-fit: cover; margin: 0 auto; display: block;">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-info fs-6">Koordinator</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center py-2 px-1">
+                            <h5 class="card-title fw-bold text-primary mb-2">Karina Nur Fadilah</h5>
+                            <p class="card-text text-secondary mb-2 fw-semibold">Koordinator Program LPPM</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <span class="badge bg-light text-dark px-3 py-2">
+                                    <i class="fas fa-user me-1"></i>
+                                    Supporting Staff
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Sarah --}}
+                <div class="col-lg-4 col-md-4">
+                    <div class="card border-0 shadow-lg h-100 hover-card">
+                        <div class="position-relative pt-2">
+                            <img src="{{ asset('images/sarah.jpg') }}"
+                                 class="card-img-top"
+                                 alt="Sarah"
+                                 style="width: 40%; height: auto; aspect-ratio: 3/4; object-fit: cover; margin: 0 auto; display: block;">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-warning fs-6">Administrator</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center py-2 px-1">
+                            <h5 class="card-title fw-bold text-primary mb-2">Sarah</h5>
+                            <p class="card-text text-secondary mb-2 fw-semibold">Administrator Sistem LPPM</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <span class="badge bg-light text-dark px-3 py-2">
+                                    <i class="fas fa-user me-1"></i>
+                                    Supporting Staff
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Muhammad Aqshal Syauq Abdullah --}}
+                <div class="col-lg-4 col-md-4">
+                    <div class="card border-0 shadow-lg h-100 hover-card">
+                        <div class="position-relative pt-2">
+                            <img src="{{ asset('images/aqshal.jpg') }}"
+                                 class="card-img-top"
+                                 alt="Muhammad Aqshal Syauq Abdullah"
+                                 style="width: 40%; height: auto; aspect-ratio: 3/4; object-fit: cover; margin: 0 auto; display: block;">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-secondary fs-6">Developer</span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center py-2 px-1">
+                            <h5 class="card-title fw-bold text-primary mb-2">Muhammad Aqshal Syauq Abdullah</h5>
+                            <p class="card-text text-secondary mb-2 fw-semibold">Developer Sistem LPPM</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <span class="badge bg-light text-dark px-3 py-2">
+                                    <i class="fas fa-user me-1"></i>
+                                    Supporting Staff
                                 </span>
                             </div>
                         </div>
