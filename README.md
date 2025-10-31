@@ -12,6 +12,12 @@
 [![PHP Version](https://img.shields.io/badge/PHP-7.4+-8892BF.svg)](https://php.net)
 [![Laravel Version](https://img.shields.io/badge/Laravel-8.x-F05340.svg)](https://laravel.com)
 
+---
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=4F46E5&center=true&vCenter=true&width=600&lines=Sistem+Manajemen+Penelitian+%26+Pengabdian;LPPM+IDE+LPKIA+Bandung;Platform+Modern+untuk+Akademisi" alt="Typing SVG" />
+
+---
+
 **Sistem Informasi Modern untuk Mengelola Penelitian, Pengabdian Masyarakat, dan Konten Website LPPM IDE LPKIA Bandung**
 
 [Dokumentasi](#dokumentasi) • [Demo](#demo) • [Instalasi](#instalasi) • [Kontribusi](#kontribusi)
@@ -77,16 +83,16 @@
 <div align="center">
 
 ### Homepage
-![Homepage](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=LPPM+Homepage)
+<img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="400" alt="LPPM Homepage Demo">
 
 ### Admin Dashboard
-![Dashboard](https://via.placeholder.com/800x400/059669/FFFFFF?text=Admin+Dashboard)
+<img src="https://media.giphy.com/media/3o7TKz9bX9C6Q8Q8qQ/giphy.gif" width="400" alt="Admin Dashboard Demo">
 
 ### Data Dosen
-![Dosen Management](https://via.placeholder.com/800x400/DC2626/FFFFFF?text=Dosen+Management)
+<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="400" alt="Dosen Management Demo">
 
 ### Penelitian
-![Research](https://via.placeholder.com/800x400/7C3AED/FFFFFF?text=Research+Management)
+<img src="https://media.giphy.com/media/3o7TKz9bX9C6Q8Q8qQ/giphy.gif" width="400" alt="Research Management Demo">
 
 ---
 
@@ -236,11 +242,29 @@ Developed with ❤️ by LPPM IDE LPKIA Team
 
 ---
 
+## 📈 **Aktivitas Proyek**
+
+<div align="center">
+
+![GitHub last commit](https://img.shields.io/github/last-commit/bacoti/lppm-php-downgrade-?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/bacoti/lppm-php-downgrade-?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/bacoti/lppm-php-downgrade-?style=for-the-badge)
+
+[![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=bacoti&custom_title=GitHub%20Commits%20Graph&theme=react-dark&bg_color=0D1117&hide_border=true)](https://github.com/bacoti)
+
+</div>
+
+---
+
 <div align="center">
 
 Star this repo if you find it useful!
 
 [![GitHub stars](https://img.shields.io/github/stars/bacoti/lppm-php-downgrade-.svg?style=social&label=Star)](https://github.com/bacoti/lppm-php-downgrade-/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/bacoti/lppm-php-downgrade-.svg?style=social&label=Fork)](https://github.com/bacoti/lppm-php-downgrade-/network)
+
+---
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=14&pause=1000&color=6B7280&center=true&vCenter=true&width=600&lines=Terima+kasih+telah+menggunakan+Sistem+LPPM+IDE+LPKIA+Bandung!;Dikembangkan+dengan+❤️+oleh+Tim+IT+LPKIA;©+2024+LPPM+IDE+LPKIA+Bandung.+All+rights+reserved." alt="Footer Typing SVG" />
 
 </div>
