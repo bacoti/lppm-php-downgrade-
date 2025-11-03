@@ -12,6 +12,10 @@ class ComprehensiveDosenSeeder extends Seeder
      */
     public function run(): void
     {
+        // Clear existing data to prevent conflicts
+        $this->command->info('Clearing existing dosen data...');
+        Dosen::truncate();
+
         // Data dosen dengan informasi lengkap
         $dosenData = [
             [
@@ -184,15 +188,31 @@ class ComprehensiveDosenSeeder extends Seeder
             ],
         ];
 
-        // Create dosen records
+        // Create dosen records with error handling
         foreach ($dosenData as $data) {
-            Dosen::create($data);
+            try {
+                // Use updateOrCreate to handle duplicates
+                Dosen::updateOrCreate(
+                    ['nidn_nip' => $data['nidn_nip']], // Find by NIDN
+                    $data // Update with this data
+                );
+                $this->command->info('✓ Created/Updated dosen: ' . $data['nama_lengkap']);
+            } catch (\Exception $e) {
+                $this->command->error('✗ Failed to create dosen: ' . $data['nama_lengkap'] . ' - ' . $e->getMessage());
+                continue;
+            }
         }
 
         // Create additional random dosen using factory
-        $additionalCount = max(0, 50 - count($dosenData)); // Aim for total 50 records
+        $currentCount = Dosen::count();
+        $additionalCount = max(0, 50 - $currentCount); // Aim for total 50 records
         if ($additionalCount > 0) {
-            Dosen::factory($additionalCount)->create();
+            try {
+                Dosen::factory($additionalCount)->create();
+                $this->command->info('✓ Created additional ' . $additionalCount . ' random dosen records');
+            } catch (\Exception $e) {
+                $this->command->warning('⚠ Some factory records may have failed due to duplicate constraints');
+            }
         }
 
         $this->command->info('Berhasil membuat ' . Dosen::count() . ' data dosen');
