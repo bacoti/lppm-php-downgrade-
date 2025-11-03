@@ -159,7 +159,7 @@
                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    @if($qualification->dosen?->nidn_nip)
+                                    @if($qualification->dosen && $qualification->dosen->nidn_nip)
                                         <span class="badge bg-light text-dark">{{ $qualification->dosen->nidn_nip }}</span>
                                     @else
                                         <span class="text-muted">-</span>
