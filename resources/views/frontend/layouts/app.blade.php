@@ -116,7 +116,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link" href="{{ route('faq') }}">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('frontend.faq') }}">FAQ</a></li>
                 </ul>
             </div>
         </div>
@@ -176,7 +176,7 @@
                             <li><a href="{{ route('tridarma.penelitian') }}" class="footer-link">Penelitian</a></li>
                             <li><a href="{{ route('tridarma.pengabdian') }}" class="footer-link">Pengabdian</a></li>
                             <li><a href="{{ route('dokumen.index') }}" class="footer-link">Dokumen</a></li>
-                            <li><a href="{{ route('faq') }}" class="footer-link">FAQ</a></li>
+                            <li><a href="{{ route('frontend.faq') }}" class="footer-link">FAQ</a></li>
                         </ul>
                     </div>
 

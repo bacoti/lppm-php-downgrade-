@@ -51,7 +51,8 @@ Route::get('/tentang', function () {
     return view('frontend.tentang', compact('content'));
 })->name('tentang');
 
-Route::view('/faq', 'frontend.faq')->name('faq');
+Route::view('/faq', 'frontend.faq')->name('frontend.faq');
+Route::get('/faq/{category}', 'App\Http\Controllers\FAQController@detail')->name('frontend.faq.detail');
 
 // Halaman konten statis / artikel (frontend)
 Route::get('/page/{slug}', function ($slug) {
