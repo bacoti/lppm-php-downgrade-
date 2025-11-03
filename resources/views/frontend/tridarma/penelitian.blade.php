@@ -183,11 +183,11 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="researcher-avatar-sm me-2">
-                                            {{ strtoupper(substr($research->dosen?->nama_lengkap ?? $research->ketua_peneliti ?? 'N', 0, 2)) }}
+                                            {{ strtoupper(substr(($research->dosen ? $research->dosen->nama_lengkap : null) ?? $research->ketua_peneliti ?? 'N', 0, 2)) }}
                                         </div>
                                         <div>
-                                            <div class="fw-bold">{{ $research->dosen?->nama_lengkap ?? 'N/A' }}</div>
-                                            @if($research->ketua_peneliti && $research->ketua_peneliti !== $research->dosen?->nama_lengkap)
+                                            <div class="fw-bold">{{ ($research->dosen ? $research->dosen->nama_lengkap : null) ?? 'N/A' }}</div>
+                                            @if($research->ketua_peneliti && $research->ketua_peneliti !== ($research->dosen ? $research->dosen->nama_lengkap : null))
                                             <small class="text-muted">Ketua: {{ $research->ketua_peneliti }}</small>
                                             @endif
                                         </div>
@@ -196,7 +196,7 @@
                                 <td>
                                     @if($research->nidn_leader)
                                         <small class="text-muted">{{ $research->nidn_leader }}</small>
-                                    @elseif($research->dosen?->nidn_nip)
+                                    @elseif($research->dosen && $research->dosen->nidn_nip)
                                         <small class="text-muted">{{ $research->dosen->nidn_nip }}</small>
                                     @else
                                         <span class="text-muted">-</span>
