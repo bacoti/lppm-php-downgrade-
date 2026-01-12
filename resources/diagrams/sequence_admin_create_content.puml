@@ -1,0 +1,20 @@
+@startuml
+title Sequence: Admin creates content
+
+actor Admin
+participant "Admin Route" as Route
+participant "ContentController (Admin)" as Ctrl
+participant "Content Model" as Content
+participant "ImageContent Model" as Image
+
+Admin -> Route: POST /admin/contents
+Route -> Ctrl: store(request)
+Ctrl -> Content: create(data)
+Content --> Ctrl: new Content
+alt images uploaded
+  Ctrl -> Image: create for each image
+  Image --> Ctrl: Image records
+end
+Ctrl -> Admin: redirect to contents.index (success)
+
+@enduml

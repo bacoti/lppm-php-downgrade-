@@ -1,0 +1,18 @@
+@startuml
+title Sequence: User views content detail
+
+actor User
+participant "Frontend Route" as Route
+participant "ContentController" as Ctrl
+participant "Content Model" as Content
+participant "ImageContent Model" as Image
+
+User -> Route: GET /page/{slug}
+Route -> Ctrl: show(slug)
+Ctrl -> Content: query by slug
+Content --> Ctrl: Content instance
+Ctrl -> Image: where(content_id)
+Image --> Ctrl: images[]
+Ctrl -> User: render view with content+images
+
+@enduml

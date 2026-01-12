@@ -1,0 +1,26 @@
+%% Mermaid Use Case diagram for LPPM System
+usecaseDiagram
+title Use Case - LPPM System (ringkasan)
+
+actor "User (Frontend)" as User
+actor "Admin" as Admin
+actor "Dosen" as Dosen
+
+User --> (Lihat Konten)
+User --> (Unduh Dokumen)
+User --> (Login/Logout)
+
+Dosen --> (Login/Logout)
+Dosen --> (Kelola Profil)
+Dosen --> (Lihat HAKI)
+Dosen --> (Ajukan Penelitian)
+
+Admin --> (Kelola Konten)
+Admin --> (Kelola Dosen)
+Admin --> (Kelola HAKI)
+Admin --> (Kelola Dokumen)
+Admin --> (Kelola Penelitian)
+Admin --> (Kelola Pengabdian)
+
+%% Note: Mermaid use case syntax is simpler than PlantUML. If you prefer the PlantUML source
+%% keep using `usecase.puml` and render via a PlantUML renderer (VSCode PlantUML ext or plantuml.jar).

@@ -1,0 +1,26 @@
+@startuml
+title Activity: Content publish workflow
+
+start
+  :Create Content (draft);
+  if (Submit for review?) then (yes)
+    :Change status -> submitted;
+    if (Requires review?) then (yes)
+      :Reviewer reviews;
+      if (Approved?) then (yes)
+        :Change status -> published;
+        stop
+      else (no)
+        :Return to draft with notes;
+        stop
+      endif
+    else (no)
+      :Auto publish -> published;
+      stop
+    endif
+  else (no)
+    :Save as draft;
+    stop
+  endif
+
+@enduml

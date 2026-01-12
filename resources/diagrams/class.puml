@@ -1,0 +1,75 @@
+@startuml
+title Class Diagram - Core Models (simplified)
+
+class User {
+  +id: int
+  +name: string
+  +email: string
+  +role: string
+}
+
+class Admin {
+  +id: int
+  +name: string
+  +email: string
+}
+
+class Dosen {
+  +id: int
+  +nidn_nip: string
+  +nama_lengkap: string
+  +email: string
+  +department: string
+}
+
+class Content {
+  +id: int
+  +title: string
+  +slug: string
+  +body: text
+}
+
+class ImageContent {
+  +id: int
+  +content_id: int
+  +file_path: string
+}
+
+class Dokumen {
+  +id: int
+  +judul: string
+  +file_path: string
+  +status: string
+}
+
+class Research {
+  +id: int
+  +dosen_id: int
+  +judul: string
+  +status: string
+}
+
+class Qualification {
+  +id: int
+  +dosen_id: int
+  +jenjang_pendidikan: string
+}
+
+class Service {
+  +id: int
+  +dosen_id: int
+  +judul: string
+}
+
+User "1" <|-- "0..*" Dokumen : uploads
+Dosen "1" <|-- "0..*" Qualification : has
+Dosen "1" <|-- "0..*" Research : conducts
+Dosen "1" <|-- "0..*" Service : conducts
+Content "1" <|-- "0..*" ImageContent : has
+
+note right of Content
+  Simplified attributes based
+  on app/Models/Content.php
+end note
+
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+title Use Case - LPPM System (ringkasan)
+
+actor User as "User (Frontend)"
+actor Admin as "Admin"
+actor Dosen as "Dosen"
+
+rectangle "Sistem LPPM" {
+  User --> (Lihat Konten)
+  User --> (Unduh Dokumen)
+  User --> (Login/Logout)
+
+  Dosen --> (Login/Logout)
+  Dosen --> (Kelola Profil)
+  Dosen --> (Lihat HAKI)
+  Dosen --> (Ajukan Penelitian)
+
+  Admin --> (Kelola Konten)
+  Admin --> (Kelola Dosen)
+  Admin --> (Kelola HAKI)
+  Admin --> (Kelola Dokumen)
+  Admin --> (Kelola Penelitian)
+  Admin --> (Kelola Pengabdian)
+}
+
+note left of Admin
+  Use-case awal berdasarkan
+  model dan route di repo
+end note
+
+@enduml
