@@ -106,6 +106,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{ route('dokumen.index') }}">Dokumen</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://eproposal.lpkia.ac.id/">E-Proposal</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://repository.lpkia.ac.id//index.php/jkb">Repository</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
                     
                     <li class="nav-item dropdown navbar-hover-dropdown">
                         <a class="nav-link" href="#">Pangkalan Dosen</a>
